@@ -1,0 +1,35 @@
+/* Poore body ka background color (optional) */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Halka grey background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Ye main wrapper hai jo website ko beech mein layega */
+.app-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center karne ke liye */
+}
+
+/* Navbar aur Content ki maximum width set karein */
+.navbar, .main-content {
+    width: 100%;
+    max-width: 1300px; /* Isse zyada website nahi phailegi */
+    margin: 0 auto;    /* Center align logic */
+    background-color: white; /* Website ka asli hissa white dikhega */
+    box-shadow: 0 0 15px rgba(0,0,0,0.05); /* Side mein halki shadow professional look ke liye */
+}
+
+/* Navbar ko alag se handle karein agar wo dark hai */
+.navbar {
+    background-color: #232f3e; /* Aapka purana color */
+}
+
+/* Content ke liye thodi jagah */
+.main-content {
+    min-height: 100vh; /* Screen ki poori height lele */
+    padding: 20px;
+}
