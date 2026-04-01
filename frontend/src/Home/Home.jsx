@@ -25,12 +25,12 @@ function Home() {
   }, []);
 
   const categoryData = [
-    { name: "Electronics", img: "http://googleusercontent.com/image_collection/image_retrieval/3831664667687802503_0" },
-    { name: "Fashion", img: "http://googleusercontent.com/image_collection/image_retrieval/5588749943230988593_0" },
-    { name: "Home", img: "http://googleusercontent.com/image_collection/image_retrieval/4569981450867265599_0" },
-    { name: "Sports", img: "http://googleusercontent.com/image_collection/image_retrieval/17883527975539316922_0" },
-    { name: "Beauty", img: "http://googleusercontent.com/image_collection/image_retrieval/1328338568222959269_0" },
-    { name: "Toys", img: "http://googleusercontent.com/image_collection/image_retrieval/17398632182807598556_0" }
+    { name: "Electronics", img: "https://t3.ftcdn.net/jpg/03/20/72/66/360_F_320726662_XVxhHxXYGwXnBMkHRnEeHJ4hA6gH0DqN.jpg" },
+    { name: "Fashion", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj3mGYOyGbAxZG2s5hWL-z2GMwxsXmZVAfcw&s" },
+    { name: "Home", img: "https://static.vecteezy.com/system/resources/thumbnails/000/616/494/small/home-06.jpg" },
+    { name: "Sports", img: "https://img.freepik.com/premium-vector/sports-tshirt-design-logo-sport-sport-is-shown-with-triangle-middle_856405-2413.jpg?semt=ais_hybrid&w=740&q=80" },
+    { name: "Beauty", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzlZMY9DhqvqZnVvlYjGM0_IIgP1h8ja9vxQ&s" },
+    { name: "Toys", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJwynecAro8xUbOKkbi2PsTCrbARJDFvXpQ&s" }
   ];
 
   return (
@@ -142,28 +142,10 @@ function Home() {
             <p>Loading Trending Products...</p>
           ) : products.length > 0 ? (
             products.map((item) => (
-              // <div className="product-card" key={item._id}>
-              //   <div className="prod-img-box">
-              //     <span className="discount-tag">Trending</span>
-              //     <img src="https://servis.pk/cdn/shop/files/M-DC-0200058NAVY.jpg?v=1756669025" alt={item.name} />
-              //     <button className="wishlist-btn">❤</button>
-              //   </div>
-              //   <div className="prod-info">
-              //     <h4>{item.name}</h4>
-              //     <p className="brand-name">{item.brand || "Premium Brand"}</p>
-              //     <div className="price-row">
-              //       <span className="current-price">₹{item.price}</span>
-              //     </div>
-              //     <Link to="/products">
-              //       <button className="add-cart-btn">+</button>
-              //     </Link>
-              //   </div>
-              // </div>
-              // Replace the static link around the button or wrap the whole card
               <div className="product-card" key={item._id}>
                 <Link to={`/product/${item._id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                   <div className="prod-img-box">
-                    <img src="https://ebhfashion.com/wp-content/uploads/0281-1F-1500T-SH.jpg" alt={item.name} />
+                    <img src="https://res.cloudinary.com/dfmhw2d9y/image/upload/v1774595527/css_vwcz8w.png" alt={item.name} />
                   </div>
                   <div className="prod-info">
                     <h4>{item.name}</h4>
