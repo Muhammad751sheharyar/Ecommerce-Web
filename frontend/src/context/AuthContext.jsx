@@ -18,11 +18,11 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem("userInfo", JSON.stringify(userData));
     };
 
-    const logout = () => {
-        setUser(null);
-        localStorage.removeItem("userInfo");
-        // Yahan aap backend logout API ko bhi call kar sakte hain
-    };
+    // const logout = () => {
+    //     setUser(null);
+    //     localStorage.removeItem("userInfo");
+    //     // Yahan aap backend logout API ko bhi call kar sakte hain
+    // };
 
     return (
         <AuthContext.Provider value={{ user, login, logout }}>
